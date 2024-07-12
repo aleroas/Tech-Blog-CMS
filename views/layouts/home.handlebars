@@ -1,0 +1,15 @@
+<!-- views/home.handlebars -->
+
+{{!< layouts/main }}
+
+<section id="home">
+  <h2>Latest Blog Posts</h2>
+  
+  {{#each posts}}
+    <article class="post">
+      <h3>{{title}}</h3>
+      <p>{{content}}</p>
+      <p>Posted by {{author.username}} on {{createdAt}}</p>
+    </article>
+  {{/each}}
+</section>

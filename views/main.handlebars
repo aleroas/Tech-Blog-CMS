@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    {{> header}} <!-- Include the header partial -->
+  </header>
+
+  <main>
+    {{{body}}} <!-- This is where your content will be injected -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tech Blog</p>
+  </footer>
+</body>
+</html>
